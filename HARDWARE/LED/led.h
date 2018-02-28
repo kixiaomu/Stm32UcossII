@@ -13,10 +13,13 @@
 //Copyright(C) 广州市星翼电子科技有限公司 2009-2019
 //All rights reserved									  
 ////////////////////////////////////////////////////////////////////////////////// 
-#define LED0 PDout(13)// PB5
-#define LED1 PDout(14)// PE5
-#define KEY1 PEin(0)
-#define KEY2 PCin(13)
+#define LED1 PCout(3)
+#define LED2 PCout(4)
+#define LED3 PCout(5)
+
+
+#define KEY1 PEin(5)
+#define KEY2 PEin(5)
 
 void LED_Init(void);//初始化
 void KEY_Init(void);
