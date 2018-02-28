@@ -1,4 +1,25 @@
 #include "lcd.h"
+
+/*
+PE1-> RST       GND->GND 
+PD9 ->D14       PD10->D15 
+PE15->D12       PD8->D13 
+PE13->D10       PE14->D11 
+PE11->D8        PE12->D9 
+PE9->D6         PE10->D7 
+PE7->D4         PE8->D5 
+PD0->D2         PD1-> D3
+PD14->D0        PD15-> D1
+PD5->NWE        PD4-> NOE
+PD7->CS         PD11->RS 
+PB7->CS3        PA5->SCK 
+PA6->MISO       PA7->MOSI 
+PD13->PWM       PB6->INT 
+5V ->           5V-> 
+GND ->GND       3V3->3V3 
+
+
+*/
 void LCD_GPIO_Init()
 {
 	GPIO_InitTypeDef GPIO_InitStructure;
