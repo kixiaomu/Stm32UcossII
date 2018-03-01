@@ -1,5 +1,5 @@
 #include "sys.h" 	
-#include "delay.h"	
+	
 #include "led.h"
 #include "usart.h"
 #include "includes.h"
@@ -25,7 +25,7 @@ void tmr1_callback(OS_TMR *ptmr,void *p_arg)
 	NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2);//设置中断优先级分组为组2：2位抢占优先级，2位响应优先级
 	delay_init();	    //延时函数初始化	  
 	LED_Init();		  	//初始化与LED连接的硬件接口
-	uart_init(115200);
+	uart_init();
 	OSInit();   
  	OSTaskCreate(start_task,(void *)0,(OS_STK *)&START_TASK_STK[START_STK_SIZE-1],START_TASK_PRIO );//创建起始任务
 	OSStart();	  	 
@@ -114,6 +114,7 @@ void key_handler_task(void *pdata)
 				key1_downstate=1;
 				OSTaskResume(KEY1_CHECK_TASK_PRIO);
 				OSSemPost(sem_event);
+				Usart_SendString(UART4,"xxxxx");
 			}
 			if(key ==2)
 			{

@@ -29,7 +29,6 @@
 ..\obj\main.o: ..\STM32F10x_FWLib\inc\stm32f10x_usart.h
 ..\obj\main.o: ..\STM32F10x_FWLib\inc\stm32f10x_wwdg.h
 ..\obj\main.o: ..\STM32F10x_FWLib\inc\misc.h
-..\obj\main.o: ..\SYSTEM\delay\delay.h
 ..\obj\main.o: ..\HARDWARE\LED\led.h
 ..\obj\main.o: ..\SYSTEM\usart\usart.h
 ..\obj\main.o: d:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
@@ -42,4 +41,7 @@
 ..\obj\main.o: ..\UCOSII\CONFIG\includes.h
 ..\obj\main.o: ..\UCOSII\CONFIG\os_cfg.h
 ..\obj\main.o: ..\UCOSII\PORT\os_cpu.h
+..\obj\main.o: ..\SYSTEM\delay\delay.h
+..\obj\main.o: ..\HARDWARE\I2C\I2C.h
+..\obj\main.o: d:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
 ..\obj\main.o: ucosii_task_define.h

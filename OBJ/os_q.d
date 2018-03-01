@@ -38,3 +38,8 @@
 ..\obj\os_q.o: ..\STM32F10x_FWLib\inc\stm32f10x_usart.h
 ..\obj\os_q.o: ..\STM32F10x_FWLib\inc\stm32f10x_wwdg.h
 ..\obj\os_q.o: ..\STM32F10x_FWLib\inc\misc.h
+..\obj\os_q.o: ..\SYSTEM\delay\delay.h
+..\obj\os_q.o: ..\SYSTEM\sys\sys.h
+..\obj\os_q.o: ..\HARDWARE\I2C\I2C.h
+..\obj\os_q.o: ..\UCOSII\CONFIG\includes.h
+..\obj\os_q.o: d:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h

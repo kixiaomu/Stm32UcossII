@@ -40,3 +40,6 @@
 ..\obj\usart.o: ..\UCOSII\CONFIG\includes.h
 ..\obj\usart.o: ..\UCOSII\CONFIG\os_cfg.h
 ..\obj\usart.o: ..\UCOSII\PORT\os_cpu.h
+..\obj\usart.o: ..\SYSTEM\delay\delay.h
+..\obj\usart.o: ..\HARDWARE\I2C\I2C.h
+..\obj\usart.o: d:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
